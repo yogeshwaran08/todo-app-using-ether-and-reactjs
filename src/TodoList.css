@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(19, 224, 224);
+    text-align: center;
+}
+
+#todoIcon {
+    height: 60px;
+    width: 60px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    background-color: rgb(150, 190, 190);
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formInput{
+    position: relative;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+
+}
+
+.inputField{
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    padding-left: 15px;
+    border: none;
+    color: gray;
+    box-shadow: inset 0 0 5px black;
+}
+
+.inputField :active{
+    color: black;
+}
+
+.position-abolute{
+    position: absolute;
+}
+
+.btn{
+    height: 35px;
+    width: 80px;
+    border-radius: 30px;
+    right: 0;
+    color: black;
+    background-color: rgb(240, 185, 83);
+    border: none;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(242, 179, 62);
+}
+
+.btn:active{
+    background-color: rgb(242, 179, 62);
+    transform: scale(0.8);
+    transition: 0.2s all;
+}
+
+.actionBar{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+
+.account-section{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionSection {
+    width: 150px;
+    display:flex;
+    padding-right: 15px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.actionSection:hover{
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+.actionSection:active{
+    transform: scale(0.8);
+}
+
+.actionIcon {
+    height: 50px;
+    width: 50px;
+}
+
+.actionLabel{
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+}
+
+.taskContainer{
+    width: 90%;
+    height: 400px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.taskList{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskList:hover{
+    border: 1px solid white;
+}
+
+.chkBx{
+    height: 50px;
+    width: 30px;
+}
+
+.chkTile{
+    display: flex;
+    align-items: center;
+}
+
+.taskIcon{
+    height: 30px;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 5px;
+}
